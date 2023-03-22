@@ -31,3 +31,17 @@ class BookingHelper{
     }
 }
 
+class PriceCalculator{
+    func calculateTicketPrice(tickets : Int) -> Int {
+        
+        guard tickets > 0 else {
+            return 0
+        }
+        
+        guard tickets <= 10 else {
+            return 0
+        }
+        return  tickets * 100
+        
+    }
+}
